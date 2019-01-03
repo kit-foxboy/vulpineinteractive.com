@@ -1,0 +1,22 @@
+{
+    "name": "geoffcpu1/vulpineinteractive.com",
+    "description": "A landing page for my freelance business as well as a personal portolio",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Geoff Lambert",
+            "email": "admin@vulpineinteractive.com"
+        }
+    ],
+    "require": {
+        "mustache/mustache": "~2.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    },
+    "autoload": {
+        "classmap":[
+            "src/models"
+        ]
+    }
+}
