@@ -1,7 +1,11 @@
 <?php
 
-require "../src/greetings.php";
+//import classes
+use Smarty\SmartyPortfolio\SmartyPortfolio;
+require_once "../vendor/autoload.php";
 
-echo Greetings::sayHello("Hello World!");
+$smarty = new SmartyPortfolio;
+$smarty->assign("greetings", "Hello World!");
+$smarty->display($smarty::TEMPLATES[INDEX]);
 
 ?>
